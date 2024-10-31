@@ -1,3 +1,5 @@
+//This command allows administrators to lookup a user (roles, permissions, and account information)
+
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
 const idList = require('../../data/idList.js');
