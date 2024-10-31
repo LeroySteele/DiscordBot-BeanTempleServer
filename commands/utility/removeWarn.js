@@ -1,4 +1,4 @@
-// This comamnd is used by administrators to remove warnings from a user and will remove the warning role
+// This command is used by administrators to remove warnings from a user and will remove the warning role
 
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
