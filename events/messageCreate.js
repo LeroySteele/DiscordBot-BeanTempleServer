@@ -1,3 +1,5 @@
+// Event is activated when a messege is sent in the server
+
 const { Events } = require("discord.js")
 const { MongoClient } = require('mongodb');
 const ids = require('../data/ids.js');
@@ -8,8 +10,8 @@ module.exports = {
 	async execute(message) {
 		try {
             if (message.author.bot) {
-                //nothing should happen
-            } else {                                                                                                //Level system
+                //nothing should happen as the bot shouldnt level up
+            } else {   //Level system - When a user is more active by sending messeges, then he/she will level up by getting points per messege and will get roles granting them privileges. 
                 const data = new MongoClient(ids.MONGO_DB_URL_lvl);
                 await data.connect();
                 const db = data.db(ids.DB_NAME_lvl);
@@ -166,10 +168,9 @@ module.exports = {
                             content: `Congratulations <@${message.author.id}>, you just advanced to level ${updatedDetails.level}`,
                         });
                     }
-                    //data.close ????
                 }
                 data.close();
-            }
+            } // Conditions below are to check if messeges are sent in certain channels then the bot will either re-send the template messege or will react to the messege.
             if ( message.channel.id === idList.suggestionChannel ) {
                 if (message.author.id != ids.CLIENT_ID) { // !=
                     const mes = await message.channel.messages.fetch({ limit: 10 });
