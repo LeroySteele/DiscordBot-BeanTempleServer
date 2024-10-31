@@ -1,3 +1,5 @@
+// In the roles channel, members can willing opt-in for roles by reacting to certain messeges.
+
 const { Events } = require("discord.js")
 const { MongoClient } = require('mongodb');
 const ids = require('../data/ids.js');
