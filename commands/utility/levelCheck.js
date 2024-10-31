@@ -1,3 +1,5 @@
+// This command connects to the database and allows users to check their activity level
+
 const { SlashCommandBuilder } = require('discord.js');
 const { MongoClient } = require('mongodb');
 const ids = require('../../data/ids.js');
