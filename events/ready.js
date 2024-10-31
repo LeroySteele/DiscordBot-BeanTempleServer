@@ -1,3 +1,5 @@
+// When the bot is run. it will set the bot's status and activiates the daily birthday checker - checks the database and grants the relevant users the birthday role and sends a congratulatory messege
+
 const { Events, ActivityType, EmbedBuilder } = require('discord.js');
 const cron = require('node-cron');
 const ids = require('../data/ids.js');
