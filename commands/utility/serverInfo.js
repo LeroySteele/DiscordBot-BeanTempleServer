@@ -1,3 +1,5 @@
+// This allows users to view relevant information about the server conveniently. (channels, roles and ownership)
+
 const { SlashCommandBuilder, ChannelType } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
 const idList = require('../../data/idList.js');
