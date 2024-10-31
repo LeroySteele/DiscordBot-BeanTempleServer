@@ -1,3 +1,5 @@
+// When a user leaves the server the bot will take note of it in the logs channel and update the bots status to the new 'member count'
+
 const { Events, EmbedBuilder } = require("discord.js")
 const { MongoClient } = require('mongodb');
 const ids = require("../data/ids.js");
