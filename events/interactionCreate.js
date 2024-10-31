@@ -1,3 +1,5 @@
+// When an interaction is created in discord this will activate the corresponding event listener
+
 const { Events, Collection } = require('discord.js');
 
 module.exports = {
