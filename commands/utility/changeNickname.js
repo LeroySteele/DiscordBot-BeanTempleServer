@@ -1,3 +1,5 @@
+// Users will appear in our discord server with their 'global name' so administrators can use this command to change their server nickname (display name).
+
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
 const idList = require('../../data/idList.js');
