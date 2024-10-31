@@ -3,7 +3,6 @@ const fs = require('node:fs');
 const path = require('node:path');
 const ids = require('./data/ids.js');
 
-// Give the bot access to relevant information from the server
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -18,7 +17,6 @@ const client = new Client({
 client.commands = new Collection();
 client.cooldowns = new Collection()
 
-// Cycles through the JS files in 'Commands' when a slash command is used is Discord
 const foldersPath = path.join(__dirname, 'commands');
 const commandFolders = fs.readdirSync(foldersPath);
 for (const folder of commandFolders) {
@@ -35,7 +33,6 @@ for (const folder of commandFolders) {
 	}
 }
 
-// cycles through the files in 'Events' when an event listener triggered
 const eventsPath = path.join(__dirname, 'events');
 const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
 for (const file of eventFiles) {
