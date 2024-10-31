@@ -1,3 +1,5 @@
+// This command allows users to save thier birthday to the database, so the bot can wish them on their day
+
 const { SlashCommandBuilder } = require('discord.js');
 const { MongoClient } = require('mongodb');
 const ids = require('../../data/ids.js');
