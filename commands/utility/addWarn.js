@@ -1,4 +1,4 @@
-// This comamnd is used by administrators to issue a warning to a user for mis-condusct and will assign them a warning role
+// This command is used by administrators to issue a warning to a user for mis-conduct and will assign them a warning role
 
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
