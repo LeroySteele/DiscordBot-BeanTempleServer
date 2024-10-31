@@ -1,3 +1,5 @@
+// This file must be executed in console to register the commands with discord, they will then be recognised when '/' is used.
+
 const { REST, Routes } = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
