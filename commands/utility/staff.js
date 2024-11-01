@@ -1,5 +1,4 @@
-// This command allows users to view all active administrators of the server and their rank
-
+// This command allows users to view all active administrators of the server. It takes no input parameters
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
 const idList = require('../../data/idList.js');
