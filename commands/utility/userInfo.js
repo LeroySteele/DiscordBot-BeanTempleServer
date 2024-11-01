@@ -1,4 +1,4 @@
-//This command allows administrators to lookup a user (roles, permissions, and account information)
+//This command allows administrators to lookup a user (roles, permissions, and account information). It takes 1 input parameter (the targets username)
 
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
