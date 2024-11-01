@@ -1,4 +1,5 @@
-// This command is used by administrators to remove warnings from a user and will remove the warning role
+// This command is used by administrators to remove warnings from a user and will remove the warning role (lower the warning level). It then records it in the logs channel.
+// This command takes 2 input parameters (username and reason for removal)
 
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
