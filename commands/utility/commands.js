@@ -1,4 +1,4 @@
-// This command allows users to view all the accessible commands from this bot
+// This command allows users to view all the accessible commands from this bot (hard coded list). This command takes no input parameters
 
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
