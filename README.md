@@ -21,9 +21,9 @@ It handles custom slash commands, custom event listeners, an activity based leve
 Contains the discord ID's for the categories, channels, roles as well as the database login information. 
 
 
-### Commands folder
+## Commands folder
 Register the slash commands by running 'node deploy-commands.js' in console then they can get used within discord by using a '/' followed by the command name. 
 
 
-### Events folder
+## Events folder
 Contains the custom events to preform certain desired actions relating to members joinging/leaving, messege reactions and messeges being sent in certain channels. 
