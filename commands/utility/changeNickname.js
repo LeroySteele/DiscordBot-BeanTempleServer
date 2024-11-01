@@ -1,4 +1,5 @@
-// Users will appear in our discord server with their 'global name' so administrators can use this command to change their server nickname (display name).
+// Users will appear in the discord server with their 'global name' so administrators can use this command to change their server nickname (display name). It then records the change in the logs channel.
+// It takes 2 input parameters (username and new nickname)
 
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
