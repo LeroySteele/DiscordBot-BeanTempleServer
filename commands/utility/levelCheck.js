@@ -1,4 +1,4 @@
-// This command connects to the database and allows users to check their activity level
+// This command connects to the database and allows users to check their own activity level. It takes no input parameters
 
 const { SlashCommandBuilder } = require('discord.js');
 const { MongoClient } = require('mongodb');
