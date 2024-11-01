@@ -1,4 +1,4 @@
-// This allows users to view relevant information about the server conveniently. (channels, roles and ownership)
+// This allows users to view relevant information about the server conveniently. (channels, roles and ownership). It takes no input parameters
 
 const { SlashCommandBuilder, ChannelType } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
