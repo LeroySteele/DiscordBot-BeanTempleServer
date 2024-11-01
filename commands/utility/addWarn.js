@@ -1,5 +1,6 @@
 // This command is used by administrators to issue a warning to a user for mis-conduct and will assign them a warning role based on prior transgressions, it then records it in the logs channel.
 // It takes 2 input parameter (user's name and reason for warning)
+
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
 const idList = require('../../data/idList.js');
